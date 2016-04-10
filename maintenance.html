@@ -56,11 +56,6 @@ body {
   padding: 20px 40px;
   width: 100%;
 }
-.tweet {
-  max-width: 480px;
-  min-height: 100px;
-  max-height: 200px;
-}
 a {
   color: #09bbbc;  /* theme-turquoise-blue */
   font-weight: 600;
@@ -80,10 +75,17 @@ h1 > small {
   font-size: 80%;
 }
 .maulsy {
+  padding: 20px 0;
   text-align: center;
 }
 .maulsy > img {
   max-width: 100%;
+}
+.tweet {
+  border-top: 3px solid #f1f2f2;
+  min-height: 100px;
+  max-height: 200px;
+  padding-top: 20px;
 }
     </style>
   </head>
@@ -97,15 +99,17 @@ h1 > small {
         <img src="https://openride.github.io/5xx-page/MualsyTheBear.png" alt="Maulsy the bear" />
         <p>OpenRide will be back soon. <a href="#" onClick="javascript:location.reload()">refresh</a></p>
       </div>
+      <div class="tweet">
+        <a
+            class="twitter-timeline"
+            href="https://twitter.com/openrideco"
+            data-chrome="noheader nofooter noborders noscrollbar transparent"
+            data-dnt="true"
+            data-tweet-limit="1"
+            data-widget-id="719189157340430340">Tweets by @openrideco</a>
+      </div>
     </div>
-    <div class="tweet">
-      <a
-          class="twitter-timeline"
-          href="https://twitter.com/openrideco"
-          data-chrome="noheader nofooter noborders noscrollbar transparent"
-          data-dnt="true"
-          data-tweet-limit="1"
-          data-widget-id="719189157340430340">Tweets by @openrideco</a>
+    <div class="spacer">
     </div>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script>
