@@ -1,1 +1,118 @@
-5xx.html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>OpenRide will be back soon</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="application-name"         content="OpenRide">
+    <meta property="fb:app_id"            content="493762294124398" />
+    <meta property="og:url"               content="https://openride.co" />
+    <meta property="og:site_name"         content="OpenRide" />
+    <meta property="og:title"             content="OpenRide: Journey On" />
+    <meta property="og:description"       content="City-to-City Ridesharing Made Easy" />
+    <!-- grab our webfonts -->
+    <script src="https://use.typekit.net/kul2iic.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-- mixpanel so we can track this sadness -->
+    <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("bc4a184e2f51f6181eb9d4b94534c674");</script>
+    <style>
+html {
+  color: #363f44;  /* limed-spruce */
+  font-family: 'proxima-nova', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  background: #f1f2f2;  /* theme-cumulus */
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.openride {
+  width: 100%;
+}
+.openride > img {
+  height: 60px;
+  width: 307px;
+}
+.sorry {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px hsla(0, 0%, 66.7%, 0.1);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin: 20px 12px;
+  max-width: 480px;
+  min-width: 100px;
+  padding: 20px 40px;
+  width: 100%;
+}
+.tweet {
+  max-width: 480px;
+  min-height: 100px;
+  max-height: 200px;
+}
+a {
+  color: #09bbbc;  /* theme-turquoise-blue */
+  font-weight: 600;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+h1 {
+  font-size: 32px;
+}
+h1 > small {
+  color: #09bbbc;  /* theme-turquoise-blue */
+  font-size: 80%;
+}
+.maulsy {
+  text-align: center;
+}
+.maulsy > img {
+  max-width: 100%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="openride">
+      <img src="https://openride.github.io/5xx-page/logo.png" alt="OpenRide Logo" />
+    </div>
+    <div class="sorry">
+      <h1>Server MIA <small>500</small></h1>
+      <div class="maulsy">
+        <img src="https://openride.github.io/5xx-page/MualsyTheBear.png" alt="Maulsy the bear" />
+        <p>OpenRide will be back soon. <a href="#" onClick="javascript:location.reload()">refresh</a></p>
+      </div>
+    </div>
+    <div class="tweet">
+      <a
+          class="twitter-timeline"
+          href="https://twitter.com/openrideco"
+          data-chrome="noheader nofooter noborders noscrollbar transparent"
+          data-dnt="true"
+          data-tweet-limit="1"
+          data-widget-id="719189157340430340">Tweets by @openrideco</a>
+    </div>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>
+      mixpanel.track('Pageview', {
+        Page: 'Server error',
+        Path: location.pathname,
+      });
+    </script>
+  </body>
+</html>
